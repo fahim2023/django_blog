@@ -4,4 +4,8 @@ from .models import Post
 
 
 class PostList(generic.ListView):
-    model = Post
+    # model = Post
+    # queryset = Post.objects.all()
+    queryset = Post.objects.filter(status=1)
+    template_name = "blog/index.html"
+    paginate_by = 6
