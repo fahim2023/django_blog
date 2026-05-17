@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "blog",
     "django_summernote",
+    "about",
 ]
 SUMMERNOTE_THEME = "bs4"
 MIDDLEWARE = [
